@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+bot.user.setStatus('available')
 
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
