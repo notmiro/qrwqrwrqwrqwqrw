@@ -17,8 +17,8 @@ client.user.setStatus('idle')
 
 
 
-const developers = ["اي دي","",""]
-const adminprefix = "برفكس";
+const developers = ["389136174154907651","",""]
+const adminprefix = "!";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
