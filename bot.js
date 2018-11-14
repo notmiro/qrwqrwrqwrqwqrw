@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 
 client.on('ready', function() {
-    bot.user.setStatus("dnd")
+bot.user.setStatus('available')
     console.log(`i am ready ${client.user.username}`);
 });
 
