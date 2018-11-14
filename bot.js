@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 
 client.on('ready', function() {
-client.user.setStatus('idle')
     console.log(`i am ready ${client.user.username}`);
 });
 
