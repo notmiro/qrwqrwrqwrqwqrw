@@ -31,7 +31,7 @@ client.on('message', message => {
   } else  
   if (message.content.startsWith(adminprefix + 'wat')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`:white_check_mark: *Watching*   **${argresult}**`)
+      message.channel.send(`:white_check_mark: *${argresult}*`)
   } else 
   if (message.content.startsWith(adminprefix + 'lis')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
