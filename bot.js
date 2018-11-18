@@ -31,7 +31,7 @@ client.on('message', message => {
   } else  
   if (message.content.startsWith(adminprefix + 'wat')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**Now Watching   ${argresult}**`)
+      message.channel.send(`**:white_check_mark: Now Watching   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'lis')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
@@ -39,7 +39,7 @@ client.on('message', message => {
   } else 
   if (message.content.startsWith(adminprefix + 'stream')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
-      message.channel.send(`**Now Streaming   ${argresult}**`)
+      message.channel.send(`**:white_check_mark:Now Streaming   ${argresult}**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
