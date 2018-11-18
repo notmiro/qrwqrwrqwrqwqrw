@@ -17,7 +17,7 @@ client.on('ready', function() {
 
 
 const developers = ["389136174154907651","",""]
-const adminprefix = "!";
+const adminprefix = "#";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -31,7 +31,7 @@ client.on('message', message => {
   } else  
   if (message.content.startsWith(adminprefix + 'wat')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`:white_check_mark: *${argresult}*`)
+      message.channel.send(`:white_check_mark: **${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'lis')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
